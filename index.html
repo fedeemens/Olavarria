@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olavarria</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- Personalizacion css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuente de google -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Dancing+Script:wght@700&family=Farsan&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegador -->
+    <header>
+        <nav id="navegador">
+            <div class="container" id="nav">
+                <a href="#inicio"><img src="img/logo.png" class="logo" alt=""></a>
+                <div class="toggle" id="toggle">
+                    <div class="uno"></div>
+                    <div class="dos"></div>
+                    <div class="tres"></div>
+                </div>
+                <ul class="menu">
+                    <li class="item" id="nav-inicio"><a href="#inicio" class="enlace">Inicio</a></li>
+                    <li class="item" id="nav-nosotros"><a href="#nosotros" class="enlace">Nosotros</a></li>
+                    <li class="item" id="nav-contacto"><a href="#contacto" class="enlace">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seccion de inicio -->
+    <section id="inicio">
+        <div class="overlay">
+            <div class="presentacion">
+                <h1>En esta cuarentena lo mas importante es quedarse en casa.</h1>
+                <h2>Nosotros te ayudamos a encontrar ese hogar ideal</h2>
+                <a href="#nosotros">Mas informacion</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cartas sobre gualeguaychu -->
+    <section id="gualeguaychu">
+        <h2>Apostemos por gualeguaychu</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/camino-de-la-costa.jpg" alt="">
+                <h3>Camino de la costa</h3>
+                <p>Lugar de descanso frente al río con vista a nuestra costanera y hermosos atardeceres ideal para hacer deporte, bicicletear, disfrutar de la bella vista y momentos de relajación.</p>
+            </div>
+            <div class="card">
+                <img src="img/corsodromo.jpg" alt="">
+                <h3>Carnaval del pais</h3>
+                <p>Podrás disfrutar del mejor espectáculo a cielo abierto del país, escuchar un poco de música carnavalera y tener una noche mágica entre brillos y plumas. No te lo podes perder!.</p>
+            </div>
+            <div class="card">
+                <img src="img/parque-Unzué.jpg" alt="">
+                <h3>Parque Unzué</h3>
+                <p>Pasando el puente se encuentra esta hermosa reserva natural, perfecta para los paseos en familia, con una laguna, velódromo, pista de la salud y vista al río y nuestras playas. Un lugar soñado.</p>
+            </div>
+        </div>
+        <h4>Una ciudad que te va a robar el corazón</h4>
+    </section>
+
+    <!-- Banner de contacto -->
+    <section id="banner-contacto">
+        <div class="overlay">
+            <a href="#contacto">Contactanos</a>
+        </div>
+    </section>
+
+    <!-- Seccion de nosotros -->
+    <section id="nosotros">
+        <div class="container">
+            <h3 class="titulo">Sobre nosotros</h3>
+            <img src="img/EDUARDO.jpg" alt="">
+            <div class="texto">
+                <p>Mi nombre es Eduardo Olavarría, hace más de 20 años mi padre Antonio comenzó este negocio junto con Pérez Cattaruzza Inmobiliarias. En 2003 me uní a él después de haber jurado como corredor público inmobiliario de Entre Ríos, en Paraná.
+                <br/>Desde entonces ofrecemos las mejores opciones de venta, alquileres, para fin de semana, ideales para estudiantes, para locales, y más.
+                <br/>Nos importa la calidad de atención, la responsabilidad y ante todo tu bienestar.
+                <br/>Las llaves del techo de tus sueños te están esperando.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contacto -->
+    <section id="contacto">
+        <div class="datos">
+            <h3>Esperamos tu mensaje!</h3>
+            <p><img src="img/iconos/call.svg" alt="">telefono: 3446-453259</p>
+            <p><img src="img/iconos/phone.svg" alt="">celular: 3446-632214</p>
+            <p><img src="img/iconos/facebook.svg" alt="">facebook: Eduardo Alberto Olavarria</p>
+            <p><img src="img/iconos/email.svg" alt="">e-mail: olavarriaeduardopropiedades@gmail.com </p>
+            <p><img src="img/iconos/direccion.svg" alt=""> direccion: Alem 440, Gualeguaychu</p>
+        </div>
+        <div class="whatsapp" id="whap">
+            <div class="cabecera">
+                <img src="img/whap-img.jpg" alt="" class="logo">
+                <h4 class="nombre">Eduardo
+                    <br/><span class="estado" id="estado-whap">en linea</span>
+                </h4>
+            </div>
+            <form action="" class="formulario" id="form1">
+                <label for="1">Nombre</label>
+                <input type="text" name="name">
+                <label for="">Consulta</label>
+                <textarea name="consulta" id="" cols="30" rows="7"></textarea>
+                <button type=submit>Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
