@@ -5,7 +5,10 @@
     scroll-behavior: smooth;
     font-family: 'Farsan', cursive;
 }
-
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
 #navegador {
     position: fixed;
     width: 100vw;
@@ -86,6 +89,7 @@
     background-image: url(img/casa.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     .overlay {
         height: 100%;
         width: 100%;
@@ -263,6 +267,8 @@
             font-size: 20px;
             font-family: 'Open Sans', sans-serif;
             margin: 10px 0;
+            display: flex;
+            align-items: center;
         }
     }
     .whatsapp {
@@ -352,6 +358,138 @@
             }
             input:focus, button:focus, textarea:focus {
                 outline: none;
+            }
+        }
+    }
+}
+
+//Responsive 
+@media (max-width:992px){
+    #navegador {
+        .logo {
+            left: 20px !important;
+        }
+        .toggle {
+            right: 20px !important;
+        }
+    }
+    #inicio {
+        .presentacion {
+            h1 {
+
+            }
+            a {
+                font-size: 22px;
+                font-weight: 600; 
+            }
+        }
+    }
+    #gualeguaychu {
+        .cards-container {
+            .card {
+                margin: 10px; 
+            }
+        }
+    }
+    #nosotros {
+        height: auto;
+        padding: 60px 0;
+        .container {
+            flex-direction: column;
+            .titulo {
+                position: relative;
+                top: auto;
+                left: auto;
+                text-align: center;
+            }
+            img {
+                display: none;
+            }
+            .texto {
+                max-width: 100%;
+                margin-right: 0;
+                padding: 0 55px;
+                text-align: left;
+            }
+        }
+        .container::before {
+            content: "";
+            display: none;
+        } 
+    }
+    #contacto {
+        flex-direction: column;
+        .datos { 
+            width: 100vw;
+            margin-top: 30px;
+            p {
+                width: 90%;
+                padding: 0 5%;
+            }
+        }
+        .whatsapp {
+            width: 90%;
+        }
+    }
+}
+@media (max-width:768px){
+    #inicio {
+        .presentacion {
+            h1 {
+                font-size: 41px;
+            }
+        }
+    }
+    #gualeguaychu {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .cards-container {
+            .card {
+                margin: 20px 0;
+                max-width: 93%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                p {
+                    padding: 10px 25px;
+                    text-align: left;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    #nosotros {
+        padding: 40px 0;
+    }
+}
+@media (max-width:576px){
+    #inicio {
+        .presentacion {
+            h1 {
+                font-size: 20px;
+                max-width: 90%;
+                margin: 0 auto 20px auto;
+            }
+            h2 {
+                font-size: 18px;
+                max-width: 90%;
+                margin: 0 auto 50px auto;
+            }
+        }
+    }
+    #nosotros {
+        .container {
+            .texto {
+                padding: 0 5%;
+            }
+        }
+    }
+    #contacto {
+        .datos {
+            p {
+                font-size: 13px;
             }
         }
     }
