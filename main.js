@@ -24,3 +24,24 @@ setInterval (function(){
         estadoWhap.innerText = "en linea";
     }
 }, 2000);
+
+//OWL carrousel
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            1500:{
+                items:3,
+                nav:false
+            }
+        }
+    });
+});
