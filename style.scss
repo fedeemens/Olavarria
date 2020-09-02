@@ -260,7 +260,7 @@ body {
 }
 
 #nosotros {
-    padding: 130px 0;
+    padding: 60px 0;
     .contenedor {
         width: 100%;
         max-width: 1100px;
@@ -311,6 +311,7 @@ body {
 #contacto {
     background-color: #111;
     width: 100%;
+    padding-top: 60px;
     padding-bottom: 60px;
     margin-top: 100px;
     position: relative;
@@ -396,18 +397,17 @@ body {
     button:hover {
         background-color: rgb(2, 87, 2);
     }
-        
+    .efecto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        transform: translateY(-99%);
+        z-index: -1;
+    }
 }
-#contacto::after {
-    content: '';
-    position: absolute;
-    background-color: #111;
-    height: 100%;
-    width: 160%;
-    top: -100px;
-    transform: rotate(-2deg);
-    z-index: -1;
-}
+
 
 //Responsive 
 @media (max-width:1200px) {
@@ -463,7 +463,7 @@ body {
         }
     }
     #nosotros {
-        padding-bottom: 60px;
+        padding-bottom: 0px;
         .contenedor {
             p {
                 max-width: 90%;

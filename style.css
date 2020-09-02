@@ -265,7 +265,7 @@ body {
 }
 
 #nosotros {
-  padding: 130px 0;
+  padding: 60px 0;
 }
 #nosotros .contenedor {
   width: 100%;
@@ -316,6 +316,7 @@ body {
 #contacto {
   background-color: #111;
   width: 100%;
+  padding-top: 60px;
   padding-bottom: 60px;
   margin-top: 100px;
   position: relative;
@@ -402,15 +403,13 @@ body {
 #contacto button:hover {
   background-color: #025702;
 }
-
-#contacto::after {
-  content: "";
+#contacto .efecto {
   position: absolute;
-  background-color: #111;
-  height: 100%;
-  width: 160%;
-  top: -100px;
-  transform: rotate(-2deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(-99%);
   z-index: -1;
 }
 
@@ -457,7 +456,7 @@ body {
   }
 
   #nosotros {
-    padding-bottom: 60px;
+    padding-bottom: 0px;
   }
   #nosotros .contenedor p {
     max-width: 90%;
