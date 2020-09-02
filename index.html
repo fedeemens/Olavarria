@@ -15,169 +15,175 @@
     <!-- OWl carrousel -->
     <link rel="stylesheet" href="lib/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="lib/owlcarousel/owl.theme.default.min.css">
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
-    <!-- Navegador -->
-    <header>
-        <nav id="navegador">
-            <div class="container" id="nav">
-                <a href="#inicio"><img src="img/logo.png" class="logo" alt=""></a>
-                <div class="toggle" id="toggle">
-                    <div class="uno"></div>
-                    <div class="dos"></div>
-                    <div class="tres"></div>
+    <div class="app">
+        <!-- Navegador -->
+        <header>
+            <nav id="navegador">
+                <div class="container" id="nav">
+                    <a href="#inicio"><img src="img/logo.png" class="logo" alt=""></a>
+                    <div class="toggle" id="toggle">
+                        <div class="uno"></div>
+                        <div class="dos"></div>
+                        <div class="tres"></div>
+                    </div>
+                    <ul class="menu">
+                        <li class="item" id="nav-inicio"><a href="#inicio" class="enlace">Inicio</a></li>
+                        <li class="item" id="nav-nosotros"><a href="#nosotros-nav" class="enlace">Nosotros</a></li>
+                        <li class="item" id="nav-contacto"><a href="#contacto-nav" class="enlace">Contacto</a></li>
+                    </ul>
                 </div>
-                <ul class="menu">
-                    <li class="item" id="nav-inicio"><a href="#inicio" class="enlace">Inicio</a></li>
-                    <li class="item" id="nav-nosotros"><a href="#nosotros" class="enlace">Nosotros</a></li>
-                    <li class="item" id="nav-contacto"><a href="#contacto" class="enlace">Contacto</a></li>
-                </ul>
+            </nav>
+        </header>
+    
+        <!-- Seccion de inicio -->
+        <section id="inicio">
+            <div class="overlay">
+                <div class="presentacion">
+                    <h1>En esta cuarentena lo mas importante es quedarse en casa.</h1>
+                    <h2>Nosotros te ayudamos a encontrar ese hogar ideal</h2>
+                    <a href="#nosotros">Mas informacion</a>
+                </div>
             </div>
-        </nav>
-    </header>
-
-    <!-- Seccion de inicio -->
-    <section id="inicio">
-        <div class="overlay">
-            <div class="presentacion">
-                <h1>En esta cuarentena lo mas importante es quedarse en casa.</h1>
-                <h2>Nosotros te ayudamos a encontrar ese hogar ideal</h2>
-                <a href="#nosotros">Mas informacion</a>
+        </section>
+    
+        <!-- Cartas sobre gualeguaychu -->
+        <section id="gualeguaychu">
+            <div class="overlay">
+                <div class="contenedor">
+                    <h3 class="titulo">Nuestra ciudad</h3>
+                    <div class="separador"></div>
+                    <div class="cards-container">
+                        <div class="card reveal-left">
+                            <div class="img-container">
+                                <img src="img/camino-de-la-costa.jpg" alt="">
+                            </div>
+                            <h3>Camino de la costa</h3>
+                            <p>Lugar de descanso frente al río con vista a nuestra costanera y hermosos atardeceres ideal para hacer deporte, bicicletear, disfrutar de la bella vista y momentos de relajación.</p>
+                        </div>
+                        <div class="card reveal-mid">
+                            <div class="img-container">
+                                <img src="img/corsodromo.jpg" alt="">
+                            </div>
+                            <h3>Carnaval del pais</h3>
+                            <p>Podrás disfrutar del mejor espectáculo a cielo abierto del país, escuchar un poco de música carnavalera y tener una noche mágica entre brillos y plumas. No te lo podes perder!.</p>
+                        </div>
+                        <div class="card reveal-right">
+                            <div class="img-container">
+                                <img src="img/parque-Unzué.jpg" alt="">
+                            </div>
+                            <h3>Parque Unzué</h3>
+                            <p>Pasando el puente se encuentra esta hermosa reserva natural, perfecta para los paseos en familia, con una laguna, velódromo, pista de la salud y vista al río y nuestras playas. Un lugar soñado.</p>
+                        </div>
+                    </div>
+                    <h4>Apostemos por gualeguaychu<br>Una ciudad que te va a robar el corazón</h4>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Cartas sobre gualeguaychu -->
-    <section id="gualeguaychu">
-        <div class="overlay">
+        </section>
+    
+        <!-- Banner de contacto -->
+        <section id="banner-contacto">
+            <div class="overlay">
+                <a href="#contacto" class="reveal-mid">Contactanos</a>
+            </div>
+        </section>
+    
+        <!-- Galeria de imagenes -->
+        <section id="galeria">
             <div class="contenedor">
-                <h3 class="titulo">Nuestra ciudad</h3>
+                <h3 class="titulo">Galeria de imagenes</h3>
                 <div class="separador"></div>
-                <div class="cards-container">
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="img/camino-de-la-costa.jpg" alt="">
-                        </div>
-                        <h3>Camino de la costa</h3>
-                        <p>Lugar de descanso frente al río con vista a nuestra costanera y hermosos atardeceres ideal para hacer deporte, bicicletear, disfrutar de la bella vista y momentos de relajación.</p>
+                <div class="owl-carousel reveal-mid">
+                    <img src="img/alquileres/0.jpg" alt="">
+                    <img src="img/alquileres/1.jpg" alt="">
+                    <img src="img/alquileres/2.jpg" alt="">
+                    <img src="img/alquileres/3.jpg" alt="">
+                    <img src="img/alquileres/4.jpg" alt="">
+                    <img src="img/alquileres/5.jpg" alt="">
+                    <img src="img/alquileres/6.jpg" alt="">
+                    <img src="img/alquileres/7.jpg" alt="">
+                    <img src="img/alquileres/8.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Nosotros -->
+        <section id="nosotros">
+            <span id="nosotros-nav"></span>
+            <div class="contenedor">
+                <h3 class="titulo">Nosotros</h3>
+                <div class="separador"></div>
+                <p>Mi nombre es Eduardo Olavarría, mi padre Antonio comenzó este negocio en 1990 junto con Pérez Cattaruzza Inmobiliarias. En el año 2000 se independizo y siguio con mi hermano Antonio Adolfo. En 2003 los dos juramos como corredores públicos inmobiliarios de Entre Ríos. Desde entonces ofrecemos las mejores opciones de venta, alquileres, para fin de semana, ideales para estudiantes, para locales, y más. Nos importa la calidad de atención, la responsabilidad y ante todo tu bienestar. Las llaves del techo de tus sueños te están esperando.
+                    
+                    <!-- me uní a él después de haber jurado como corredor público inmobiliario de Entre Ríos, en Paraná.Desde entonces ofrecemos las mejores opciones de venta, alquileres, para fin de semana, ideales para estudiantes, para locales, y más.Nos importa la calidad de atención, la responsabilidad y ante todo tu bienestar.Las llaves del techo de tus sueños te están esperando. -->
+                </p>
+                <div class="imagenes">
+                    <div class="reveal-left">
+                        <img src="img/whap-img.jpg" alt="">
+                        <p>Eduardo Olavarria.</p>
                     </div>
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="img/corsodromo.jpg" alt="">
-                        </div>
-                        <h3>Carnaval del pais</h3>
-                        <p>Podrás disfrutar del mejor espectáculo a cielo abierto del país, escuchar un poco de música carnavalera y tener una noche mágica entre brillos y plumas. No te lo podes perder!.</p>
-                    </div>
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="img/parque-Unzué.jpg" alt="">
-                        </div>
-                        <h3>Parque Unzué</h3>
-                        <p>Pasando el puente se encuentra esta hermosa reserva natural, perfecta para los paseos en familia, con una laguna, velódromo, pista de la salud y vista al río y nuestras playas. Un lugar soñado.</p>
+                    <div class="reveal-right">
+                        <img src="img/padre.jpg" alt="">
+                        <p>Antonio Domingo Olavarria.</p>
                     </div>
                 </div>
-                <h4>Apostemos por gualeguaychu<br>Una ciudad que te va a robar el corazón</h4>
             </div>
-        </div>
-    </section>
-
-    <!-- Banner de contacto -->
-    <section id="banner-contacto">
-        <div class="overlay">
-            <a href="#contacto">Contactanos</a>
-        </div>
-    </section>
-
-    <!-- Galeria de imagenes -->
-    <section id="galeria">
-        <div class="contenedor">
-            <h3 class="titulo">Galeria de imagenes</h3>
+        </section>
+    
+        <!-- contacto -->
+        <section id="contacto">
+            <span id="contacto-nav"></span>
+            <h3 class="titulo">Contacto</h3>
             <div class="separador"></div>
-            <div class="owl-carousel">
-                <img src="img/alquileres/0.jpg" alt="">
-                <img src="img/alquileres/1.jpg" alt="">
-                <img src="img/alquileres/2.jpg" alt="">
-                <img src="img/alquileres/3.jpg" alt="">
-                <img src="img/alquileres/4.jpg" alt="">
-                <img src="img/alquileres/5.jpg" alt="">
-                <img src="img/alquileres/6.jpg" alt="">
-                <img src="img/alquileres/7.jpg" alt="">
-                <img src="img/alquileres/8.jpg" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!-- Nosotros -->
-    <section id="nosotros">
-        <div class="contenedor">
-            <h3 class="titulo">Nosotros</h3>
-            <div class="separador"></div>
-            <p>Mi nombre es Eduardo Olavarría, mi padre Antonio comenzó este negocio en 1990 junto con Pérez Cattaruzza Inmobiliarias. En el año 2000 se independizo y siguio con mi hermano Antonio Adolfo. En 2003 los dos juramos como corredores públicos inmobiliarios de Entre Ríos. Desde entonces ofrecemos las mejores opciones de venta, alquileres, para fin de semana, ideales para estudiantes, para locales, y más. Nos importa la calidad de atención, la responsabilidad y ante todo tu bienestar. Las llaves del techo de tus sueños te están esperando.
-                
-                <!-- me uní a él después de haber jurado como corredor público inmobiliario de Entre Ríos, en Paraná.Desde entonces ofrecemos las mejores opciones de venta, alquileres, para fin de semana, ideales para estudiantes, para locales, y más.Nos importa la calidad de atención, la responsabilidad y ante todo tu bienestar.Las llaves del techo de tus sueños te están esperando. -->
-            </p>
-            <div class="imagenes">
-                <div>
-                    <img src="img/whap-img.jpg" alt="">
-                    <p>Eduardo Olavarria.</p>
-                </div>
-                <div>
-                    <img src="img/padre.jpg" alt="">
-                    <p>Antonio Domingo Olavarria.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- contacto -->
-    <section id="contacto">
-        <h3 class="titulo">Contacto</h3>
-        <div class="separador"></div>
-        <div class="contenedor">
-            <div class="datos">
-                <div class="dato">
-                    <img src="img/iconos/call.svg" alt="">
-                    <div class="descripcion">
-                        <h4>telefono: </h4>
-                        <p>3446-453259</p>
+            <div class="contenedor">
+                <div class="datos">
+                    <div class="dato">
+                        <img src="img/iconos/call.svg" alt="">
+                        <div class="descripcion">
+                            <h4>telefono: </h4>
+                            <p>3446-453259</p>
+                        </div>
+                    </div>
+                    <div class="dato">
+                        <img src="img/iconos/phone.svg" alt="">
+                        <div class="descripcion">
+                            <h4>celular: </h4>
+                            <p>3446-632214</p>
+                        </div>
+                    </div>
+                    <div class="dato">
+                        <img src="img/iconos/facebook.svg" alt="">
+                        <div class="descripcion">
+                            <h4>facebook: </h4>
+                            <p>Eduardo Alberto Olavarria</p>
+                        </div>
+                    </div>
+                    <div class="dato mail">
+                        <img src="img/iconos/email.svg" alt="">
+                        <div class="descripcion">
+                            <h4>e-mail: </h4>
+                            <p>olavarriaeduardopropiedades@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="dato">
+                        <img src="img/iconos/direccion.svg" alt="">
+                        <div class="descripcion">
+                            <h4>direccion: </h4>
+                            <p>Alem 440, Gualeguaychu</p>
+                        </div>
                     </div>
                 </div>
-                <div class="dato">
-                    <img src="img/iconos/phone.svg" alt="">
-                    <div class="descripcion">
-                        <h4>celular: </h4>
-                        <p>3446-632214</p>
-                    </div>
-                </div>
-                <div class="dato">
-                    <img src="img/iconos/facebook.svg" alt="">
-                    <div class="descripcion">
-                        <h4>facebook: </h4>
-                        <p>Eduardo Alberto Olavarria</p>
-                    </div>
-                </div>
-                <div class="dato mail">
-                    <img src="img/iconos/email.svg" alt="">
-                    <div class="descripcion">
-                        <h4>e-mail: </h4>
-                        <p>olavarriaeduardopropiedades@gmail.com</p>
-                    </div>
-                </div>
-                <div class="dato">
-                    <img src="img/iconos/direccion.svg" alt="">
-                    <div class="descripcion">
-                        <h4>direccion: </h4>
-                        <p>Alem 440, Gualeguaychu</p>
-                    </div>
+                <div class="mapa">
+                    <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2365.6697952885424!2d-58.50725526454813!3d-33.01531312738318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa9cd7ef68cd5%3A0xa3f131228e1283a0!2sLeandro%20N.%20Alem%20440%2C%20Gualeguaych%C3%BA%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses!2sar!4v1599028239796!5m2!1ses!2sar" frameborder="0" allowfullscreen=""></iframe>
                 </div>
             </div>
-            <div class="mapa">
-                <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2365.6697952885424!2d-58.50725526454813!3d-33.01531312738318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa9cd7ef68cd5%3A0xa3f131228e1283a0!2sLeandro%20N.%20Alem%20440%2C%20Gualeguaych%C3%BA%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses!2sar!4v1599028239796!5m2!1ses!2sar" frameborder="0" allowfullscreen=""></iframe>
-            </div>
-        </div>
-        <button><img src="img/whatsapp.svg" alt=""> Escribime por whatsapp</button>
-        <img class="efecto" src="img/efecto.svg" alt="">
-    </section>
+            <button><img src="img/whatsapp.svg" alt=""> Escribime por whatsapp</button>
+            <img class="efecto" src="img/efecto.svg" alt="">
+        </section>
+    </div>
 
     <!-- Scripts -->
     <script src="lib/jquery.min.js"></script>

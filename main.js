@@ -38,10 +38,64 @@ $(document).ready(function(){
                 items:1,
                 nav:false
             },
-            1500:{
+            1000:{
                 items:3,
                 nav:false
             }
         }
     });
+});
+
+//Scroll reveal
+ScrollReveal().reveal('.reveal-left', {
+    distance: '200px',
+    duration: 1500,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    origin: 'left',
+    viewFactor: 0.4,
+    desktop: true,
+    mobile: false
+});
+ScrollReveal().reveal('.reveal-right', {
+    distance: '200px',
+    duration: 1500,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    origin: 'right',
+    viewFactor: 0.4,
+    desktop: true,
+    mobile: false
+});
+ScrollReveal().reveal('.reveal-mid', {
+    delay: 300,
+    distance: '0px',
+    duration: 2000,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    origin: 'top',
+    viewFactor: 0.4,
+    desktop: true,
+    mobile: false
+});
+ScrollReveal().reveal('.reveal-left', {
+    distance: '200px',
+    duration: 1100,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    origin: 'left',
+    desktop: false,
+    mobile: true
+});
+ScrollReveal().reveal('.reveal-right', {
+    distance: '200px',
+    duration: 1100,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    origin: 'right',
+    desktop: false,
+    mobile: true
+});
+ScrollReveal().reveal('.reveal-mid', {
+    distance: '0px',
+    duration: 1100,
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    origin: 'top',
+    desktop: false,
+    mobile: true
 });

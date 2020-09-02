@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
+.app {
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -266,6 +266,12 @@ body {
 
 #nosotros {
   padding: 60px 0;
+  position: relative;
+}
+#nosotros span {
+  top: -70px;
+  pointer-events: none;
+  position: absolute;
 }
 #nosotros .contenedor {
   width: 100%;
@@ -320,6 +326,11 @@ body {
   padding-bottom: 60px;
   margin-top: 100px;
   position: relative;
+}
+#contacto span {
+  top: -70px;
+  pointer-events: none;
+  position: absolute;
 }
 #contacto .titulo {
   text-align: center;
@@ -411,6 +422,10 @@ body {
   height: auto;
   transform: translateY(-99%);
   z-index: -1;
+}
+
+.reveal-left, .reveal-right, .reveal-mid {
+  visibility: hidden;
 }
 
 @media (max-width: 1200px) {
