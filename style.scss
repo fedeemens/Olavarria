@@ -24,8 +24,8 @@
             position: absolute;
             left: 0;
             top: 12.5px;
-            max-height: 55px;
-            width: auto;
+            max-height: 90px;
+            width: 202px;
         }
         .toggle {
             position: absolute;
@@ -426,7 +426,7 @@
 @media (max-width:1200px) {
     #navegador {
         .logo {
-            margin-left: 30px;
+            margin-left: 20px;
         }
         .toggle {
             margin-right: 30px;
