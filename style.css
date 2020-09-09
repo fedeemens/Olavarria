@@ -474,6 +474,11 @@
     padding: 0 30px;
   }
 }
+@media (max-width: 1000px) {
+  #banner-contacto {
+    background-attachment: local;
+  }
+}
 @media (max-width: 900px) {
   #nosotros {
     padding-top: 60px;
