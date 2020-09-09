@@ -8,6 +8,7 @@
     width: 100%;
     overflow-x: hidden;
 }
+
 #navegador {
     position: fixed;
     width: 100vw;
@@ -137,10 +138,11 @@
     background: url(img/marmol.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     .overlay {
         height: 100%;
         width: 100%;
-        background-color: rgba(193,193,193,0.5);
+        background-color: rgba(230,230,230,0.4);
         padding-top: 60px;
         padding-bottom: 100px;
     }
@@ -174,6 +176,7 @@
                 max-width: 340px;
                 border-radius: 5px;
                 background-color: white;
+                box-shadow: 1px 1px 6px 0px #aaa;
                 .img-container {
                     overflow: hidden;
                     height: 230px;
@@ -255,6 +258,28 @@
             width: 40px;
             background-color: red;
             margin: 20px auto 50px auto;
+        }
+    }
+    .owl-dots {display: none;}
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translate(0, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .owl-prev {
+            color: white;
+            font-size: 60px;
+            padding: 10px !important;
+            outline: none;
+        }
+        .owl-next {
+            color: white;
+            font-size: 60px;
+            padding: 10px !important;
+            outline: none;
         }
     }
 }
