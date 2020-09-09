@@ -138,7 +138,6 @@
     background: url(img/marmol.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     .overlay {
         height: 100%;
         width: 100%;
@@ -213,13 +212,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     .overlay {
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0,0,0,0.6);
         a {
             padding: 20px 40px;
             margin-top: 20px;
